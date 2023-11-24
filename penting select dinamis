@@ -1,0 +1,45 @@
+function SelectCat2(){
+    removeAllOptions(document.form1.SubCat);
+    addOption(document.form1.SubCat, "", "Pilih Merk", "");
+    if(document.form1.Category.value == 'Desktop')
+    {   addOption(document.form1.SubCat,"Acer", "Acer");
+        addOption(document.form1.SubCat,"Dell", "Dell");
+        addOption(document.form1.SubCat,"Lenovo", "Lenovo");
+    }
+    if(document.form1.Category.value == 'Laptop')
+    {   addOption(document.form1.SubCat,"Asus", "Asus");
+        addOption(document.form1.SubCat,"Acer", "Acer");
+        addOption(document.form1.SubCat,"Sony Vaio", "Sony Vaio");
+    }
+    if(document.form1.Category.value == 'Smartphone')
+    {   addOption(document.form1.SubCat,"Samsung", "Samsung");
+        addOption(document.form1.SubCat,"LG", "LG");
+        addOption(document.form1.SubCat,"Sony Xperia", "Sony Xperia");
+    }
+}
+function removeAllOptions(selectbox)
+{   var i;
+    for(i=selectbox.options.length-1;i>=0;i--)
+    {   selectbox.remove(i); }
+}
+function addOption(selectbox, value, text )
+{   var optn = document.createElement("OPTION");
+    optn.text = text;
+    optn.value = value;
+    selectbox.options.add(optn);
+}
+
+<body>
+    <h3>Dynamic Drop Down List dengan JavaScript</h3>
+    <form name="form1">
+        <select name="Category" onChange="SelectCat2();" >
+            <option value="">Pilih Jenis Produk</option>
+            <option value="Desktop">Desktop</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Smartphone">Smartphone</option>
+        </select>
+        <select id="SubCat" name="SubCat">
+            <option value="">Pilih Merk</option>
+        </select>
+    </form>
+</body>
