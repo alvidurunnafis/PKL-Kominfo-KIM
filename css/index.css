@@ -1,0 +1,63 @@
+html,
+body,
+header,
+#intro{
+    height: 100%;
+}
+
+#intro{
+    background: url('../image/bacground\ website\ kominfo.png')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headline{
+    padding-top: 25%;
+}
+
+.modal.modal-fullscreen .modal-dialog {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+
+.modal.modal-fullscreen .modal-content {
+    height: auto;
+    height: 100vh;
+    border-radius: 0;
+    border: none;
+}
+
+.modal.modal-fullscreen .modal-body {
+    overflow-y: auto;
+}
+
+.tombol{
+    border-radius: 30px;
+    width: 150px;
+}
+
+hr {
+    border-top: 1px solid black;
+    /* margin-top: auto;
+    margin-bottom: auto;
+    display: block; */
+}
+
+.kartu{
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.bg-card{
+    background-color: #D9D9D9;
+}
+
+/* footer */
+.page-footer{
+    border-radius: 100% 100% 0 0;
+}

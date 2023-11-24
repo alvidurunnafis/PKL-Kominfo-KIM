@@ -1,0 +1,28 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url('../image/bacground\ login.png')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#headline {
+    padding-top: 12%;
+    padding-bottom: 12%;
+}
+
+.input{
+    height: 60px;
+    border-radius: 30px;
+}
+
+.tombol{
+    height: 60px;
+    border-radius: 30px;
+}
